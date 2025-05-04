@@ -1,0 +1,19 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6rem;
+    background-color: #fefefb;
+    padding: 4rem 6rem;
+}
+
+.image {
+    border: 1px solid black;
+    padding: 4rem;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}

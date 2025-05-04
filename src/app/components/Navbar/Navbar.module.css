@@ -1,0 +1,129 @@
+.navbar {
+    position: fixed;
+    top: 0;
+    background-color: white;
+    width: 100%;
+}
+
+.navItems {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 6rem;
+}
+
+.navLinks {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    list-style-type: none;
+    gap: 2rem;
+}
+
+.navLink {
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+
+/* Denna skall ersättas med en image */
+.logo {
+    visibility: hidden;   
+}
+
+
+.hamburger {
+    width: 2rem;
+    height: 2rem;
+    display: flex;
+    justify-content: space-around;
+    flex-flow: column nowrap;
+    z-index: 10;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+
+
+.burger {
+    background-color: black;
+    width: 2.5rem;
+    height: 0.25rem;
+    border-radius: 10px;
+    transform-origin: 1px;
+    transition: all 0.3s linear;
+  }
+  
+  /* States */
+  .burger1Open {
+    transform: rotate(35deg);
+  }
+  .burger2Open {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  .burger3Open {
+    transform: rotate(-35deg);
+  }
+
+  /* Default: hide menu for mobile */
+.hideMenuNav {
+    display: none;
+  }
+  
+  /* When open: show menu */
+  .showMenuNav {
+    display: flex;
+    position: absolute;
+    top: 60px; /* adjust depending on navbar height */
+    left: 0;
+    right: 0;
+    background-color: white;
+    flex-direction: column;
+    padding: 2rem;
+    z-index: 9;
+  }
+
+
+  @media screen and (min-width: 600px) {
+    .navItems {
+        flex-direction: row;
+        justify-content: space-between;
+        height: auto;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    .navLinks {
+    flex-direction: row;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    .logo {
+    font-weight: 700;
+    visibility: visible;
+}
+}
+
+
+@media screen and (min-width: 600px) {
+    .hamburger {
+    visibility: hidden;
+}
+}
+  
+/* Desktop: always show nav links */
+@media screen and (min-width: 600px) {
+.hideMenuNav,
+.showMenuNav {
+    display: flex !important;
+    position: static;
+    flex-direction: row;
+    padding: 0;
+    background: none;
+}
+}
+  
+  

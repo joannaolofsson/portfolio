@@ -1,0 +1,23 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+    background-color: #fefefb;
+    padding: 4rem 6rem;
+}
+
+.cardSort {
+    display: flex;
+    flex-direction: row;
+    gap: 4rem;
+}
+
+.cardWrapper {
+    border: 1px solid gray;
+}
+
+.title {
+    font-weight:400;
+}
