@@ -21,7 +21,7 @@ function Navbar() {
       </div>
 
       <div className={styles.navItems}>
-        <Link href="/" className={styles.logo}>Logo</Link>
+        <Link href="/" className={styles.logo}>JO</Link>
           <ul className={`${styles.navLinks} ${isOpen ? styles.showMenuNav : styles.hideMenuNav}`}>
             <li><Link href="#about" className={styles.navLink} onClick={() => setIsOpen(false)}>About</Link></li>
             <li><Link href="#project" className={styles.navLink} onClick={() => setIsOpen(false)}>Project</Link></li>

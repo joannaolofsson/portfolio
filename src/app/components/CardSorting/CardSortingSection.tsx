@@ -1,27 +1,28 @@
 import React from 'react'
 import styles from './CardSortingSection.module.css'
-import Card from '../Card/Card'
 
 function CardSortingSection() {
   return (
-    <div id='cardsorting' className={styles.container}>
-        <h2>Card sorting</h2>
+    <div id='cardsorting' className={styles.cardSortingSection}>
         <div className={styles.cardSort}>
-            <div className={styles.cardWrapper}>
-            <Card />
+            <h2>Card sorting</h2>
+        </div>
+        <div className={styles.cardWrapper}>
+                <p>Deck of cards</p>
             </div>
-            <div>
-            <h3 className={styles.title}>Very much according to my values</h3>
+        <div className={styles.cardValue1}>
+            <p>Very much according to my values</p>
+            <div className={styles.placeCard}>Place card here</div>
         </div>
-        <div>
-            <h3 className={styles.title}>According to my values</h3>
+        <div className={styles.cardValue2}>
+            <p>According to my values</p>
+            <div className={styles.placeCard}>Place card here</div>
         </div>
-        <div>
-            <h3 className={styles.title}>Not inline with my values</h3>
+        <div className={styles.cardValue3}>
+            <p>Not inline with my values</p>
+            <div className={styles.placeCard}>Place card here</div>
         </div>
         </div>
-        </div>
-
   )
 }
 

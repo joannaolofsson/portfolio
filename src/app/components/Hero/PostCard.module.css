@@ -12,14 +12,15 @@
     justify-content: center;
     gap: 2rem;
     margin-top: 2rem;
+    min-width: 331px;
   }
   
 
 .stampPlaceholder {
-width: 80px;
-height: 80px;
-border: 1px solid gray;
-align-self: end;
+  width: 80px;
+  height: 80px;
+  border: 1px solid gray;
+  align-self: end;
 }
 
 .addressRow {

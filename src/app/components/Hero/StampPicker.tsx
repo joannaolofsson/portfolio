@@ -1,14 +1,22 @@
 import React from 'react'
-import styles from './StampPicker.module.css'
+import Button from '../Button/Button';
+import styles from './StampPicker.module.css';
 
 function StampPicker() {
   return (
-    <div>
-      <h4>Choose your stamp</h4>
-      <h4>Want to send me a postcard?</h4>
-      <button>Postcard</button>
+    <>
+    <div className={styles.stampWrapper}>
+      <h3 className={styles.heading}>Select a stamp</h3>
+      <div>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
     </div>
+    
+    </>
   )
 }
 
-export default StampPicker
+export default StampPicker;
