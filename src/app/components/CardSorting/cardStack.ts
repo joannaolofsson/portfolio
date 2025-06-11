@@ -1,0 +1,22 @@
+export const initialCards = [
+    'Creative', 
+    'Disciplined', 
+    'Curious', 
+    'Organized', 
+    'Risk-taker',
+    'Adaptable',
+    'Empathetic',
+    'Resilient',
+    'Assertive',
+    'Analytical',
+    'Charismatic',
+    'Independent',
+    'Open-minded',
+    'Ambitios',
+    'Honest',
+    'Patient',
+    'Determined',
+    'Humble',
+    'Resourceful',
+    'Passionate'
+];

@@ -1,0 +1,19 @@
+.backdrop {
+  display: fixed;
+  inset: 0;
+  background-color: black;
+  opacity: 50%;
+  z-index: 40;
+}
+
+.drawer {
+  background-color: white;
+  padding: 1rem;
+}
+
+.contact {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}

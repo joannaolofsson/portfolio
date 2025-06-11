@@ -2,7 +2,7 @@ import styles from "./page.module.css";
 import HeroSection from "./components/Hero/HeroSection";
 import AboutSection from "./components/About/AboutSection";
 import ProjectSection from "./components/Project/ProjectSection";
-import CardSortingSection from "./components/CardSorting/CardSortingSection";
+import CardSortingGame from "./components/CardSorting/CardSortGame";
 
 export default function Home() {
   return (
@@ -11,7 +11,7 @@ export default function Home() {
       <HeroSection />
       <AboutSection />
       <ProjectSection />
-      <CardSortingSection />
+      <CardSortingGame />
       </main>
     </div>
   );

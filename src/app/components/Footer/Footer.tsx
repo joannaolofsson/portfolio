@@ -4,8 +4,10 @@ import styles from './Footer.module.css'
 function Footer() {
   return (
     <div className={styles.footer}>
-      <h3>Contact me</h3>
-      <h4>Joanna Olofsson</h4>
+      <h4>Contact me</h4>
+      <p>Joanna Olofsson</p>
+      <p>Email:</p>
+      <p>Sociala medier</p>
     </div>
   )
 }

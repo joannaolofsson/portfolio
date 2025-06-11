@@ -9,13 +9,14 @@
     width: 100%;
     display: flex;
     flex-direction: column;
-    padding: 1rem 6rem;
+    padding: 0.5rem 8rem .5rem 6rem;
 }
 
 .navLinks {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     list-style-type: none;
     gap: 2rem;
 }
@@ -24,11 +25,16 @@
     text-decoration: none;
     color: black;
     cursor: pointer;
+    font-weight: 500;
 }
 
-/* Denna skall ersättas med en image */
+
 .logo {
-    visibility: hidden;   
+    visibility: hidden;
+
+    @media screen and (min-width: 600px) {
+        width: 80%;
+    }
 }
 
 
@@ -40,11 +46,9 @@
     flex-flow: column nowrap;
     z-index: 10;
     position: absolute;
-    top: 10px;
-    right: 10px;
+    top: 30px;
+    right: 30px;
 }
-
-
 
 .burger {
     background-color: black;

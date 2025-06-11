@@ -1,5 +1,5 @@
 export type ButtonProps = { 
-    variant?: "primary" | "secondary" | "modaldrawer";
+    variant?: "primary" | "secondary" | "drawer";
     children: React.ReactNode;
     onClick?: () => void;
 }

@@ -1,7 +1,11 @@
 import type { NextConfig } from "next";
 
-const nextConfig: NextConfig = {
-  /* config options here */
+const nextConfig = {
+  webpack: (config:any) => {
+    config.cache = false; // 💥 disable cache
+    return config;
+  },
 };
 
-export default nextConfig;
+module.exports = nextConfig;
+

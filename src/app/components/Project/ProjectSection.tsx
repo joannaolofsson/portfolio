@@ -1,11 +1,11 @@
 import React from 'react'
 import styles from './ProjectSection.module.css';
-import Card from '../Card/Card';
+import Card from '../ui/Card/Card';
 
 function Project() {
   return (
     <div id='project' className={styles.container}>
-      <h2 className={styles.heading}>Project</h2>
+      <h3 className={styles.heading}>Project</h3>
         <Card />
         <Card />
         <Card />
