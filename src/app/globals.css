@@ -4,41 +4,89 @@
   margin: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+
+:root {
+  --color-bg-primary: #FFFBF1;
+  --color-bg-secondary: #f8f3e9;
+  --color-text-primary: #faf8ff;
+  --color-text-secondary: #3B3B3B;
+  --color-link: #faf8ff;
+  --color-extra: #FF6F61;
+  --shadow-glow: 0 0 20px rgba(205, 180, 255, 0.4);
+}
+
 body {
-  background: linear-gradient(160deg, #dce4dc, #c7d3c2);
-  font-family: var(--font-roboto);
+  background: var(--color-bg-primary);
+  font-family: var(--font-inter);
   --webkit-font-smoothing: antialiased;
   --moz-osx-font-smoothing: grayscale;
+  color: var(--color-text-primary);
 }
+
+@font-face {
+  font-family: 'Beautiful People';
+  src: url('/fonts/BeautifulPeople.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
 
 h1 {
-  font-size: clamp(2.5rem, 5vw, 4rem);
-  line-height: 1.1;
-  font-weight: 700;
+  font-family: var(--font-inter);
+  font-size: 2.5rem;
+  line-height: 1.1.2;
+  font-weight: 300;
   margin-bottom: 1rem;
+  color: var(--color-text-secondary);
+  font-style: italic;
 }
 
+/* PostCard */
 h2 {
-  font-family: var(--font-caveat);
-  font-size: clamp(2rem, 4vw, 3rem);
+  font-family: 'Beautiful People', cursive;
+  font-size: 2.5rem; /* or larger for hero text */
+  font-weight: normal; /* the font has only one weight */
+  letter-spacing: 0.03em; /* slight spacing to help legibility */
   line-height: 1.2;
-  font-weight: 400;
-  margin-bottom: .75rem;
+  color: var(--color-text-secondary);
 }
 
 h3 {
-  font-size: clamp(1.5rem, 3vw, 2.25rem);
-  line-height: 1.3;
-  font-weight: 600;
-  margin-bottom: .5rem;
+  font-family: var(--font-inter);
+  font-size: 2rem;
+  line-height: 1.4;
+  font-weight: 400;
+  margin-bottom: .75rem;
+  color: var(--color-text-secondary);
 }
 
 h4 {
-  font-family: var(--font-caveat);
-  font-size: clamp(1.5rem, 3vw, 2.25rem);
-  line-height: 1.3;
+ font-family: var(--font-inter);
+  font-size: 1.5rem;
+  line-height: 1.4;
   font-weight: 500;
   margin-bottom: .5rem;
+}
+
+h5 {
+  font-family: var(--font-inter);
+  font-size: 1.25rem;
+  line-height: 1.5;
+  font-weight: 500;
+  margin-bottom: .5rem;
+}
+
+p {
+  font-family: var(--font-inter);
+}
+
+a {
+      font-family: var(--font-inter);
 }
 
 .section {

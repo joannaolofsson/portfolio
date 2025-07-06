@@ -1,18 +1,21 @@
 import type { Metadata } from "next";
-import { Roboto, Caveat } from "next/font/google";
+import {Lato, Inter } from "next/font/google";
 import "./globals.css";
 import Navbar from "./components/Navbar/Navbar";
 import Footer from "./components/Footer/Footer";
 
-const roboto = Roboto({
-  variable: "--font-roboto",
-  subsets: ["latin"],
-});
 
-const caveat = Caveat({
-  variable: "--font-caveat",
-  subsets: ["latin"],
-});
+const lato = Lato({
+  subsets: ['latin'],
+  variable: '--font-lato',
+  weight: '400',
+})
+const inter = Inter({
+  subsets: ['latin'],
+  variable: '--font-inter',
+  weight: ['100', '200', '300', '400'],
+
+})
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -26,7 +29,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${roboto.variable} ${caveat.variable}`}>
+      <body className={`${lato.variable} ${inter.variable}`}>
         <Navbar />
         {children}
         <Footer />

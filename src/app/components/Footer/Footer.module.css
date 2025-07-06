@@ -2,8 +2,22 @@
     display: flex;
     flex-direction: column;
     padding: 3rem 2rem 4rem 2rem;
+    border: 1px dotted pink;
+    padding: 3rem 2rem 4rem 2rem;
 
     @media screen and (min-width: 600px) {
-        padding: 3rem 6rem;
+        padding: 4rem 6rem;
     }
+}
+
+.footerHeading {
+    color: var(--color-text-secondary);
+    font-size: 1.5rem;
+    padding: 1rem 0;
+}
+
+.content {
+    display: flex;
+    justify-content: space-evenly;
+    color: var(--color-text-secondary);
 }

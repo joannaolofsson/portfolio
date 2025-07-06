@@ -3,15 +3,22 @@
     flex-direction: column;
     gap: 2rem;
     padding: 3rem 2rem 4rem 2rem;
+    color: var(--color-text-secondary);
+    scroll-margin-top: 80px;
 
     @media screen and (min-width: 900px) {
         padding: 3rem 6rem;
     }
 }
 
-/*.heading {
-    background-color: pink;
-}*/
+.cardsWrapper {
+    display: flex;
+    flex-direction: column;
+
+    @media screen and (min-width: 900px) {
+        flex-direction: row;
+    }
+}
 
 .first {
     background-color: antiquewhite;

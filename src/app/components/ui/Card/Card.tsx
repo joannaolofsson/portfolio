@@ -1,13 +1,22 @@
-import React from 'react'
-import styles from './Card.module.css'
+import React from 'react';
+import styles from './Card.module.css';
+import { CardProps } from '@/app/types/types';
+import Image from 'next/image';
 
-function Card() {
+export default function Card({ title, description, image }: CardProps) {
   return (
-    <div className={styles.card}>
-      <h3>Card</h3>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas nam ullam possimus.</p>
+    <div className={styles.cardContainer}>
+      {image && (
+        <Image
+          src={image}
+          alt={title}
+          width={300}
+          height={200}
+          className={styles.cardImage}
+        />
+      )}
+      <h4>{title}</h4>
+      <p>{description}</p>
     </div>
-  )
+  );
 }
-
-export default Card

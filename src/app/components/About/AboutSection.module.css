@@ -1,23 +1,82 @@
-.container {
-    display: flex;
-    flex-direction: column;
-    gap: 4rem;
-    background-color: #fefefb;
-    padding: 3rem 2rem 4rem 2rem;
-
-    @media screen and (min-width: 600px) {
-        flex-direction: row;
-        padding: 3rem 6rem 4rem 6rem;
-    }
+.aboutContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* optional, helps center the inner */
+  color: var(--color-text-secondary);
+  scroll-margin-top: 80px;
 }
 
-.aboutProfileImage {
-    border: 1px solid black;
-    padding: 2rem;
+.inner {
+  width: 100%;
+  margin: 0 auto;
+  padding: 3rem 2rem 4rem 2rem;
+
+  @media screen and (min-width: 900px) {
+    padding: 3rem 5rem;
+  }
 }
 
-.aboutContent {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
+
+
+.tape {
+  position: relative;
+  padding: 1rem;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  margin: 0 auto;
+  cursor: pointer;
+}
+
+.tape p {
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition: all 0.4s ease;
+  margin-top: 0.5rem;
+  color: var(--color-text-secondary);
+}
+
+.tape:hover p {
+  max-height: 200px; /* Adjust based on content */
+  opacity: 1;
+}
+
+.badge {
+  display: inline-block;
+  color: var(--color-text-secondary);
+  padding: 0.4rem 0.8rem;
+  font-size: 1.2rem;
+  margin: 0.25rem;
+}
+
+.separator {
+  margin: 0 0.5rem;
+  color: var(--color-text-secondary);
+  padding: 0 0 0 2rem;
+}
+.badgeWrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip {
+  position: absolute;
+  bottom: 125%; /* Position above the badge */
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: var(--color-bg, #fff);
+  color: var(--color-text, #333);
+  padding: 0.5rem 0.75rem;
+  border-radius: 4px;
+  white-space: nowrap;
+  font-size: 0.85rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+  z-index: 10;
+}
+
+.badgeWrapper:hover .tooltip {
+  opacity: 1;
 }
