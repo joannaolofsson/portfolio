@@ -1,0 +1,21 @@
+
+.dropZone {
+  border: 2px dashed #CBAACB; 
+  border-radius: 20px;
+  padding: 1rem 3rem 2rem 3rem;
+  min-width: 280px;
+  min-height: 200px;
+  background-color: #FFFBF1; 
+  transition: background 0.3s ease;
+  backdrop-filter: blur(4px);
+}
+
+.dropZoneTitle {
+  font-family: var(--font-playfair);
+  font-size: 1.5rem;
+  font-style: italic;
+  color: #4A3F35; /* Title kort */
+  margin-bottom: 1rem;
+  text-align: center;
+  letter-spacing: 1px;
+}

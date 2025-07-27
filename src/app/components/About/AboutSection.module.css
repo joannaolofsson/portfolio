@@ -1,12 +1,18 @@
 .aboutContainer {
   display: flex;
   flex-direction: column;
-  align-items: center; /* optional, helps center the inner */
+  align-items: center; 
+  justify-content: center;
   color: var(--color-text-secondary);
   scroll-margin-top: 80px;
+  margin-top: 10px;
+  border-top: 1px dotted pink;
+  border-bottom: 1px dotted pink;
 }
 
 .inner {
+  display: flex;
+  justify-content: center;
   width: 100%;
   margin: 0 auto;
   padding: 3rem 2rem 4rem 2rem;
@@ -16,7 +22,9 @@
   }
 }
 
-
+.heading {
+  place-self: center;
+}
 
 .tape {
   position: relative;

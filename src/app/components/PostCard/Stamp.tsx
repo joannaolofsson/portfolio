@@ -19,17 +19,14 @@ const STAMP_MESSAGES: Record<StampType, string> = {
 export const Stamp = ({ type, onStamp, stamped }: StampProps) => {
   return (
     <div
-      className={`${styles.stamp} ${styles[type]} ${stamped ? styles.stamped : ''}`}
+      className={`${styles.stamp} ${stamped ? styles.stamped : ''}`}
       onClick={onStamp}
       title="Click to stamp"
     >
-      <div className={styles.chatWrapper}>
-        <div className={styles.chatBubble}>
-          {STAMP_MESSAGES[type]}
-        </div>
+      <div className={`${styles.stampInner} ${styles[type]}`}>
+        {STAMP_MESSAGES[type]}
       </div>
     </div>
   );
 };
 
-export default Stamp;

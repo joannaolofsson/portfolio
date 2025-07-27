@@ -1,8 +1,7 @@
 'use client';
 import React, { useState } from 'react';
 import styles from './PostCard.module.css';
-import Stamp from './Stamp';
-import { Robot } from 'phosphor-react';
+import { Stamp } from './Stamp';
 
 export type StampType = 'approved' | 'playful' | 'bold' | 'curious';
 
@@ -19,14 +18,11 @@ export function PostCard() {
 
     return (
         <>
-            <div className={styles.robotContent}>
-            <Robot size={28} weight="duotone" className={styles.robotIcon} />
             <p className={styles.helperText}>
-                Choose a stamp mood below!
+                Pick a stamp and stamp the postcard!
             </p>
-            </div>
+            
             <div className={styles.controls}>
-                
                 {STAMP_TYPES.map((t) => (
                     <button
                         key={t}

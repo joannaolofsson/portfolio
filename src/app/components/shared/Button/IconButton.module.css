@@ -1,0 +1,81 @@
+.button {
+  all: unset;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.isIconOnly {
+  width: var(--size-icon-lg);
+  height: var(--size-icon-lg);
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  margin: var(--size-sm) var(--size-sm) var(--size-sm) 0;
+  background-color: rgba(0, 0, 0, 0.20);
+  color: var(--color-text-secondary);
+  border: none;
+}
+
+.isWithLabel {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  align-items: center;
+  padding: var(--padding-md);
+  border: none;
+}
+
+.label {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.sizeSm {
+  padding: var(--padding-sm) var(--padding-md);
+
+}
+
+.sizeMd {
+  padding: var(--padding-md) var(--padding-lg);
+
+}
+
+.sizeLg {
+  padding: var(--padding-lg) var(--padding-xl);
+
+}
+
+.radiusNone {
+  border-radius: var(--radius-none);
+}
+
+.radiusSm {
+  border-radius: var(--radius-sm);
+}
+
+.radiusMd {
+  border-radius: var(--radius-md);
+}
+
+.radiusLg {
+  border-radius: var(--radius-lg);
+}
+
+
+/* Variant buttons */
+
+.primary {
+  background-color: #CBAACB;
+  color: var(--color-text-secondary);
+}
+.ghost {
+  background-color: transparent;
+  color: var(--color-text-secondary);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

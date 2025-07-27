@@ -1,34 +1,33 @@
+'use client'
 import React from 'react'
 import styles from './ProjectSection.module.css';
-import Card from '../ui/Card/Card';
+import Card from '../shared/Card/Card';
 import Image from 'next/image';
+import { projectData } from './projectData';
+import IconButton from '../shared/Button/IconButton';
 
 export function ProjectsSection() {
   return (
     <div id='projectssection' className={styles.container}>
       <h3 className={styles.heading}>Project</h3>
       <div className={styles.cardsWrapper}>
-        <Card
-          image="/confetti.png"
-          title="Small win"
-          description="By adding your small wins, you will both feel our win and get closer to your future self"
-        />
 
-        <Card
-          image="/confetti.png"
-          title="Blog"
-          description="By adding your small wins, you will both feel our win and get closer to your future self"
-        />
-
-        <Card
-          image="/confetti.png"
-          title="Advice Generator"
-          description="By adding your small wins, you will both feel our win and get closer to your future self"
-        />
-
+        {projectData.map((project, index) => (
+          <Card
+            key={project.title}
+            title={project.title}
+            description={project.description}
+            image={project.image}
+            githubUrl={project.githubUrl}  
+            //blogUrl={project.blogUrl}
+            readmeUrl={project.readmeUrl}          
+            reversed={index === 1}
+          />
+        ))}
       </div>
-    </div>
+      </div>
   )
 }
 
 export default ProjectsSection;
+

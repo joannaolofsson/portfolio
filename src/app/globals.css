@@ -8,7 +8,6 @@ html {
   scroll-behavior: smooth;
 }
 
-
 :root {
   --color-bg-primary: #FFFBF1;
   --color-bg-secondary: #f8f3e9;
@@ -17,29 +16,31 @@ html {
   --color-link: #faf8ff;
   --color-extra: #FF6F61;
   --shadow-glow: 0 0 20px rgba(205, 180, 255, 0.4);
+  --radius-none: 0px;
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 16px;
+  --size-icon-sm: 32px;
+  --size-icon-md: 40px;
+  --size-icon-lg: 48px;
+  --padding-sm: 0.5rem;
+  --padding-md: 0.75rem;
+  --padding-lg: 1rem;
+  --padding-xl: 1.25rem;
 }
 
 body {
   background: var(--color-bg-primary);
-  font-family: var(--font-inter);
+  font-family: var(--font-montserrat);
   --webkit-font-smoothing: antialiased;
   --moz-osx-font-smoothing: grayscale;
-  color: var(--color-text-primary);
+  color: var(--color-text-secondary);
 }
-
-@font-face {
-  font-family: 'Beautiful People';
-  src: url('/fonts/BeautifulPeople.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
-}
-
-
 
 h1 {
-  font-family: var(--font-inter);
+  font-family: var(--font-montserrat);
   font-size: 2.5rem;
-  line-height: 1.1.2;
+  line-height: 1.2;
   font-weight: 300;
   margin-bottom: 1rem;
   color: var(--color-text-secondary);
@@ -48,16 +49,18 @@ h1 {
 
 /* PostCard */
 h2 {
-  font-family: 'Beautiful People', cursive;
-  font-size: 2.5rem; /* or larger for hero text */
-  font-weight: normal; /* the font has only one weight */
-  letter-spacing: 0.03em; /* slight spacing to help legibility */
+  font-family: var(--font-playfair);
+  font-size: 2.5rem;
+  font-weight: normal;
+  font-style: italic;
+  letter-spacing: 0.03em;
   line-height: 1.2;
   color: var(--color-text-secondary);
+
 }
 
 h3 {
-  font-family: var(--font-inter);
+  font-family: var(--font-montserrat);
   font-size: 2rem;
   line-height: 1.4;
   font-weight: 400;
@@ -66,7 +69,7 @@ h3 {
 }
 
 h4 {
- font-family: var(--font-inter);
+  font-family: var(--font-montserrat);
   font-size: 1.5rem;
   line-height: 1.4;
   font-weight: 500;
@@ -74,7 +77,7 @@ h4 {
 }
 
 h5 {
-  font-family: var(--font-inter);
+  font-family: var(--font-montserrat);
   font-size: 1.25rem;
   line-height: 1.5;
   font-weight: 500;
@@ -82,11 +85,12 @@ h5 {
 }
 
 p {
-  font-family: var(--font-inter);
+  font-family: var(--font-montserrat);
+  font-size: 1rem;
 }
 
 a {
-      font-family: var(--font-inter);
+  font-family: var(--font-montserrat);
 }
 
 .section {

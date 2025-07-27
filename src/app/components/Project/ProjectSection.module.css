@@ -1,7 +1,8 @@
 .container {
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    justify-content: flex-start;
+    gap: 3rem;
     padding: 3rem 2rem 4rem 2rem;
     color: var(--color-text-secondary);
     scroll-margin-top: 80px;
@@ -11,23 +12,11 @@
     }
 }
 
+.heading {
+    align-self: center;
+}
+
 .cardsWrapper {
     display: flex;
     flex-direction: column;
-
-    @media screen and (min-width: 900px) {
-        flex-direction: row;
-    }
-}
-
-.first {
-    background-color: antiquewhite;
-}
-
-.second{
-  background-color: lightcyan;
-}
-
-.third{
-   background-color: lightblue;
 }

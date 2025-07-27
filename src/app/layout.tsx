@@ -1,20 +1,18 @@
 import type { Metadata } from "next";
-import {Lato, Inter } from "next/font/google";
+import {Montserrat, Roboto, Playfair_Display } from "next/font/google";
 import "./globals.css";
 import Navbar from "./components/Navbar/Navbar";
 import Footer from "./components/Footer/Footer";
 
 
-const lato = Lato({
+const montserrat = Montserrat({
   subsets: ['latin'],
-  variable: '--font-lato',
-  weight: '400',
+  variable: '--font-montserrat',
+  weight: ['400', '500', '600'],
 })
-const inter = Inter({
+const playfair = Playfair_Display({
   subsets: ['latin'],
-  variable: '--font-inter',
-  weight: ['100', '200', '300', '400'],
-
+  variable: '--font-playfair',
 })
 
 export const metadata: Metadata = {
@@ -29,7 +27,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${lato.variable} ${inter.variable}`}>
+      <body className={`${montserrat.variable} ${playfair.variable}`}>
         <Navbar />
         {children}
         <Footer />

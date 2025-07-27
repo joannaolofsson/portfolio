@@ -14,10 +14,37 @@
     color: var(--color-text-secondary);
     font-size: 1.5rem;
     padding: 1rem 0;
+    place-self: center;
 }
 
 .content {
     display: flex;
     justify-content: space-evenly;
     color: var(--color-text-secondary);
+}
+
+.emailWrapper {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.emailText {
+  font-size: 1rem;
+  color: var(--color-text-secondary);
+}
+
+.copyIcon {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: var(--color-accent, #DB3EB1);
+  transition: color 0.2s ease;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+
+.copyIcon:hover {
+  color: #a0268a;
 }

@@ -22,7 +22,7 @@ export const AboutSection = () => {
           className={styles.tape}
           onClick={() => setExpanded((prev) => !prev)}
         >
-          <h3>About me</h3>
+          <h3 className={styles.heading}>About me</h3>
           {expanded && (
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi itaque eum quia vel, explicabo illum rem reiciendis nam excepturi.
